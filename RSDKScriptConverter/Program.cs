@@ -35,6 +35,18 @@ namespace RSDKScriptConverter
 					case "v4old":
 						srceng = new ScriptEngineV4Old();
 						break;
+					case "c":
+						switch (args[0].ToLowerInvariant())
+						{
+							case "v3":
+								dsteng = new ScriptEngineCV3();
+								break;
+							case "v4":
+							case "v4old":
+								dsteng = new ScriptEngineCV4();
+								break;
+						}
+						break;
 					default:
 						Console.WriteLine("Unknown input format {0}", args[0]);
 						return;
