@@ -11,7 +11,7 @@ namespace RSDKScriptConverter
 	{
 		static void Main(string[] args)
 		{
-			if (args.Length < 1)
+			if (args.Length < 3)
 			{
 				Console.WriteLine("Usage: RSDKScriptConverter infmt outfmt infile [outfile]");
 				Console.WriteLine();
@@ -79,7 +79,7 @@ namespace RSDKScriptConverter
 						Console.WriteLine("Unknown output format {0}", args[1]);
 						return;
 				}
-				string infile = args[2];
+				string infile = args[3];
 				string outfile;
 				if (args.Length > 3)
 					outfile = args[3];
