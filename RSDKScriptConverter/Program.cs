@@ -19,7 +19,7 @@ namespace RSDKScriptConverter
 				Console.WriteLine("\tv3\tRSDKv3 RetroScript");
 				Console.WriteLine("\tv4\tRSDKv4 RetroScript");
 				Console.WriteLine("\tv4Old\tRSDKv4 RetroScript (old format)");
-				Console.WriteLine("\tC\tC code (output only)");
+				Console.WriteLine("\tC\tC code (RSDKv5 only)");
 			}
 			else
 			{
